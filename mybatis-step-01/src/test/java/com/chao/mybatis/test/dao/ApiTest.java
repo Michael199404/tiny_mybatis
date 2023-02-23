@@ -6,6 +6,9 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 学习如何为一个接口类生成对应的映射器代理
+ */
 public class ApiTest {
 
     @Test

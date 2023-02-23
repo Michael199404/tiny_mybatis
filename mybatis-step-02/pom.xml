@@ -2,16 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tiny_mybatis</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>tiny_mybatis</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>mybatis-step-01</module>
-        <module>mybatis-step-02</module>
-    </modules>
+    <artifactId>mybatis-step-02</artifactId>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
@@ -32,6 +30,11 @@
             <artifactId>junit</artifactId>
             <version>4.7</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.5.0</version>
         </dependency>
         <!-- LOGGING begin -->
         <dependency>
@@ -71,6 +74,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
